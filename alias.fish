@@ -2,6 +2,7 @@
 alias gg="lazygit"           # Shortcut for 'lazygit', a terminal UI for Git.
 alias ls="eza"               # Replace 'ls' with 'eza', an enhanced version with more features.
 alias lsl="eza -al"          # Alias to list all files with detailed info.
+alias cp="xcp"               # An extended `cp`
 alias vim="nvim"             # Use 'nvim' when 'vim' is called; Neovim is an improved version of Vim.
 alias e="nvim"               # Short alias for opening Neovim.
 alias obs="nvim ~/Notes/!Home.md"  # Open the 'Home.md' note in Neovim.
