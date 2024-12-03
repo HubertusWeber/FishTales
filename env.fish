@@ -14,6 +14,10 @@ set -gx XDG_STATE_HOME "$HOME/.local/state"      # Data that should persist betw
 # This is a custom directory for storing development-related files and tools.
 set -gx DEV_HOME "$HOME/.dev"
 
+# Set log home directory.
+# This is a custom directory for storing log files I particularly care about.
+set -gx LOG_HOME "$HOME/.local/log"
+
 # Set global Git configuration file path to XDG config directory.
 # Ensures Git uses the configuration file located in the standard XDG config directory.
 set -gx GIT_CONFIG_GLOBAL "$XDG_CONFIG_HOME/git/gitconfig"
