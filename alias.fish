@@ -5,8 +5,20 @@ alias lsl="eza -al"          # Alias to list all files with detailed info.
 alias cp="xcp"               # An extended `cp`
 alias vim="nvim"             # Use 'nvim' when 'vim' is called; Neovim is an improved version of Vim.
 alias e="nvim"               # Short alias for opening Neovim.
-alias obs="nvim ~/Notes/!Home.md"  # Open the 'Home.md' note in Neovim.
-alias todo="nvim ~/Notes/Todo.md"  # Open the 'Todo.md' note in Neovim.
 alias clj="clojure -A:no-history"  # Run Clojure without recording REPL history.
 alias rm="echo Use 'rip' instead of rm."  # Prevent accidental deletion by advising to use 'rip'.
 alias rip="rip --graveyard ~/.Trash"      # 'rip' moves files to a graveyard directory instead of deleting.
+
+# Opens Home.md in Notes directory while preserving current location.
+function obs
+    pushd ~/Notes
+    nvim !Home.md
+    popd
+end
+
+# Opens Todo.md in Notes directory while preserving current location.
+function todo
+    pushd ~/Notes
+    nvim Todo.md
+    popd
+end
