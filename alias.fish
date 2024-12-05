@@ -11,6 +11,13 @@ alias rm="echo Use 'rip' instead of rm."  # Prevent accidental deletion by advis
 alias rip="rip --graveyard ~/.Trash"      # 'rip' moves files to a graveyard directory instead of deleting.
 
 # Opens Home.md in Notes directory while preserving current location.
+function notes
+    pushd ~/Notes
+    nvim .
+    popd
+end
+
+# Opens Home.md in Notes directory while preserving current location.
 function obs
     pushd ~/Notes
     nvim !Home.md
