@@ -16,6 +16,7 @@ Like a well-maintained aquarium, this setup keeps things clean, organized, and b
 
 Make sure you have these essential tools installed:
 
+- [bat](https://github.com/sharkdp/bat) - A cat clone with syntax highlighting
 - [fish](https://fishshell.com/) - The friendly interactive shell
 - [fzf](https://github.com/junegunn/fzf) - A command-line fuzzy finder
 - [homebrew](https://brew.sh/) - The missing package manager for macOS

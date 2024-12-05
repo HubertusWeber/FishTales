@@ -9,6 +9,7 @@ alias e="nvim"               # Short alias for opening Neovim.
 alias clj="clojure -A:no-history"  # Run Clojure without recording REPL history.
 alias rm="echo Use 'rip' instead of rm."  # Prevent accidental deletion by advising to use 'rip'.
 alias rip="rip --graveyard ~/.Trash"      # 'rip' moves files to a graveyard directory instead of deleting.
+alias cat="bat --paging=never --theme=Nord" # A cat(1) clone with wings.
 
 # Opens Home.md in Notes directory while preserving current location.
 function notes

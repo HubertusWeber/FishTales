@@ -32,6 +32,10 @@ set -gx STARSHIP_CONFIG "$XDG_CONFIG_HOME/starship/starship.toml"
 # Prevents 'less' from storing command history, enhancing privacy.
 set -gx LESSHISTFILE /dev/null
 
+# Set bat style to plain mode.
+# Disables syntax highlighting and other decorations in bat output for cleaner text display.
+set -gx BAT_STYLE plain
+
 # Set zoxide data directory to XDG data directory.
 # Zoxide is a smarter cd command that learns your habits.
 set -gx _ZO_DATA_DIR "$XDG_DATA_HOME"
