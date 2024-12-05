@@ -44,6 +44,10 @@ set -gx GNUPGHOME "$XDG_DATA_HOME/gnupg"
 # Ensures Git uses the configuration file located in the standard XDG config directory.
 set -gx GIT_CONFIG_GLOBAL "$XDG_CONFIG_HOME/git/gitconfig"
 
+# Set SSH home directory.
+# Specifies a custom location for SSH-related files and configurations.
+set -gx SSH_HOME "$DEV_HOME/ssh"
+
 # Programming Languages and Development Tools Configuration
 
 ## Python
