@@ -23,3 +23,10 @@ function todo
     nvim Todo.md
     popd
 end
+
+# Opens Scratch.md in Notes directory while preserving current location.
+function scr
+    pushd ~/Notes
+    nvim Scratch.md
+    popd
+end
