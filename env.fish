@@ -21,7 +21,7 @@ set -gx LOG_HOME "$HOME/.local/log"
 # Set default visual editor and command-line editor to neovim.
 # 'VISUAL' is used by programs that can launch a visual editor.
 # 'EDITOR' is the fallback for command-line editing tasks.
-set -gx VISUAL "/Applications/Neovim.app/Contents/MacOS/Automator Application Stub"
+set -gx VISUAL $HOME/.local/bin/gvim
 set -gx EDITOR /opt/homebrew/bin/nvim
 
 # Set Starship configuration file path to XDG config directory.
