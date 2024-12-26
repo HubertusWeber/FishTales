@@ -13,7 +13,7 @@ alias gtree="fd | tree --fromfile" # Get a tree view of all files within a git r
 alias rm="echo Use 'rip' instead of rm."  # Prevent accidental deletion by advising to use 'rip'.
 alias rip="rip --graveyard ~/.Trash"      # 'rip' moves files to a graveyard directory instead of deleting.
 alias cat="bat --paging=never --theme=Nord" # A cat(1) clone with wings.
-alias hack="cargo hack check --feature-powerset --all-targets && cargo hack clippy --feature-powerset --all-targets" # Runs full static analysis suite: cargo check & clippy across all feature combinations and targets
+alias hack="cargo hack check --feature-powerset --all-targets && cargo hack clippy --feature-powerset --all-targets -- -W clippy::all -W clippy::pedantic -W clippy::nursery" # Runs full static analysis suite: cargo check & clippy across all feature combinations and targets
 
 # Opens Home.md in Notes directory while preserving current location.
 function notes
