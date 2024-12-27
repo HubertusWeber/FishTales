@@ -21,6 +21,9 @@ source $config_dir/path.fish
 # Define command aliases, which are shortcuts or custom commands that expand to longer command sequences or options.
 source $config_dir/alias.fish
 
+# Define custom helper functions that work like command line tools but are written directly in fish.
+source $config_dir/functions.fish
+
 # Set up custom command completions, enhancing the shell's auto-completion features.
 source $config_dir/completions.fish
 
