@@ -8,7 +8,6 @@ Like a well-maintained aquarium, this setup keeps things clean, organized, and b
 
 - **Modular Design**: Each aspect of the configuration lives in its own file, making it easy to understand and customize
 - **Clean Home Directory**: Configured to keep your home directory as pristine as a freshly cleaned fish tank
-- **Nord Color Scheme**: Beautiful arctic-inspired colors that are easy on the eyes
 - **Heavily Commented**: Every configuration file is thoroughly documented, perfect for learning and customization
 - **Flexible Installation**: Place files wherever you want, just make sure they swim together!
 
@@ -62,10 +61,6 @@ If you prefer to keep the files elsewhere:
    ```fish
    source /path/to/FishTales/config.fish
    ```
-
-## 🎨 Theming
-
-This configuration uses the beautiful [Nord](https://www.nordtheme.com/) color scheme, providing a cool, arctic feel to your terminal environment.
 
 ## 📝 License
 
