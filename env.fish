@@ -55,6 +55,9 @@ set -gx GIT_CONFIG_GLOBAL "$XDG_CONFIG_HOME/git/gitconfig"
 # This file is executed whenever the interactive Python interpreter is started.
 set -gx PYTHONSTARTUP "$XDG_CONFIG_HOME/python/pythonrc"
 
+# Change location of ipython directory to our dev home.
+set -gx IPYTHONDIR "$DEV_HOME/ipython"
+
 ## Rust
 # Set Rustup and Cargo home directories.
 # 'RUSTUP_HOME' and 'CARGO_HOME' define where Rustup and Cargo store data.
