@@ -18,6 +18,9 @@ set -gx DEV_HOME "$HOME/.dev"
 # This is a custom directory for storing log files I particularly care about.
 set -gx LOG_HOME "$HOME/.local/log"
 
+# Set global output directory.
+set -gx OUTPUT_DIR "$HOME/output"
+
 # Set default visual editor and command-line editor to neovim.
 # 'VISUAL' is used by programs that can launch a visual editor.
 # 'EDITOR' is the fallback for command-line editing tasks.
@@ -63,6 +66,9 @@ set -gx IPYTHONDIR "$DEV_HOME/ipython"
 # 'RUSTUP_HOME' and 'CARGO_HOME' define where Rustup and Cargo store data.
 set -gx RUSTUP_HOME "$DEV_HOME/rustup"
 set -gx CARGO_HOME "$DEV_HOME/cargo"
+
+# Define a global output directory for all cargo crates
+set -gx CARGO_TARGET_DIR "$OUTPUT_DIR/cargo"
 
 ## Go
 # Set Go workspace directory.
