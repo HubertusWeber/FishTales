@@ -70,6 +70,10 @@ set -gx CARGO_HOME "$DEV_HOME/cargo"
 # Define a global output directory for all cargo crates
 set -gx CARGO_TARGET_DIR "$OUTPUT_DIR/cargo"
 
+## Ruby
+# Set location of irb configuration file
+set -gx IRBRC "$DEV_HOME/irbrc"
+
 ## Go
 # Set Go workspace directory.
 # 'GOPATH' specifies the location of your Go workspace.
