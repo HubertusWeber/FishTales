@@ -53,6 +53,15 @@ set -gx GIT_CONFIG_GLOBAL "$XDG_CONFIG_HOME/git/gitconfig"
 
 # Programming Languages and Development Tools Configuration
 
+
+
+## ASDF Version Manager
+# Set ASDF startup file to XDG config directory.
+set -gx ASDF_CONFIG_FILE "$XDG_CONFIG_HOME/asdf/asdfrc"
+
+# Change location of asdf directory to our dev home.
+set -gx ASDF_DATA_DIR "$DEV_HOME/asdf"
+
 ## Python
 # Set Python startup file to XDG config directory.
 # This file is executed whenever the interactive Python interpreter is started.
@@ -118,18 +127,19 @@ set -gx ELAN_HOME "$DEV_HOME/elan"
 # Used by the Mojo programming language
 set -gx MODULAR_HOME "$DEV_HOME/modular"
 
-## Ruby
+## Ruby [Disabled -- managed by ASDF]
+set -gx ASDF_RUBY_VERSION "3.4.1"
 # Set linker flags to include Homebrew Ruby libraries.
 # 'LDFLAGS' is used by the linker to find libraries during compilation.
-set -gx LDFLAGS -L/opt/homebrew/opt/ruby/lib
+# set -gx LDFLAGS -L/opt/homebrew/opt/ruby/lib
 
 # Set pkg-config path to include Ruby's pkgconfig directory.
 # Helps compilation scripts find Ruby's installed packages.
-set -gx PKG_CONFIG_PATH /opt/homebrew/opt/ruby/lib/pkgconfig
+# set -gx PKG_CONFIG_PATH /opt/homebrew/opt/ruby/lib/pkgconfig
 
 # Set compiler flags to include Ruby header files.
 # 'CPPFLAGS' is used by the C preprocessor to find header files during compilation.
-set -gx CPPFLAGS -I/opt/homebrew/opt/ruby/include
+# set -gx CPPFLAGS -I/opt/homebrew/opt/ruby/include
 
 ## Java/Maven
 # Set Maven options to use XDG cache directory for local repository.
