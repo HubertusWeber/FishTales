@@ -9,6 +9,6 @@ set -gx SHELL_SESSIONS_DISABLE 1
 # Configure Homebrew behavior.
 set -gx HOMEBREW_NO_ENV_HINTS 1                  # Suppress environment variable hints from Homebrew.
 set -gx HOMEBREW_NO_INSECURE_REDIRECT 1          # Prevent Homebrew from following insecure redirects.
-set -gx HOMEBREW_CASK_OPTS --require-sha         # Require SHA256 checksums for Cask downloads for security.
+# set -gx HOMEBREW_CASK_OPTS --require-sha         # Require SHA256 checksums for Cask downloads for security.
 set -gx HOMEBREW_NO_ANALYTICS 1                  # Disable Homebrew's analytics data collection.
 
