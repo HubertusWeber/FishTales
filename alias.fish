@@ -1,6 +1,6 @@
 # Define command aliases for convenience and efficiency.
 alias re="exec fish"         # Reload fish.
-alias gg="gitui --watcher"   # Shortcut for 'gitui', a terminal UI for Git.
+alias gg="lazygit"   # Shortcut for 'lazygit', a terminal UI for Git.
 alias ls="eza"               # Replace 'ls' with 'eza', an enhanced version with more features.
 alias lst="eza --tree"       # Alias to list files in tree view.
 alias lsl="eza -al"          # Alias to list all files with detailed info.
