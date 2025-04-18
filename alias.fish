@@ -15,7 +15,7 @@ alias rm="echo Use 'rip' instead of rm."  # Prevent accidental deletion by advis
 alias rip="rip --graveyard ~/.Trash"      # 'rip' moves files to a graveyard directory instead of deleting.
 alias ripd="sudo rip --graveyard ~/.Trash -d"       # Empty graveyard with sudo priveleges.
 alias cat="bat --paging=never --theme=gruvbox-dark" # A cat(1) clone with wings.
-alias hack="cargo hack clippy --feature-powerset --all-targets -- -W clippy::all -W clippy::pedantic -W clippy::nursery -A clippy::module-name-repetitions" # Runs full static analysis suite: cargo check & clippy across all feature combinations and targets
+alias hack="cargo hack clippy --feature-powerset --all-targets -- -W clippy::all -W clippy::pedantic -W clippy::nursery -A clippy::module-name-repetitions -A clippy::suboptimal_flops -A clippy::too_many_arguments -A clippy::cast_precision_loss -A clippy::too_many_lines -A clippy::cast_possible_truncation" # Runs full static analysis suite: cargo check & clippy across all feature combinations and targets
 
 # Opens Home.md in Notes directory while preserving current location.
 function notes
