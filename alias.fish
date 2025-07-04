@@ -10,7 +10,6 @@ alias vim="nvim"             # Use 'nvim' when 'vim' is called; Neovim is an imp
 alias e="nvim"               # Short alias for opening Neovim.
 alias exe="exercism"         # Exercism CLI client
 alias th="thokr -f 3"        # Start a typing practice session with three sentences.
-alias clj="clojure -A:no-history"  # Run Clojure without recording REPL history.
 alias gtree="fd | tree --fromfile" # Get a tree view of all files within a git repo.
 alias rm="echo Use 'rip' instead of rm."  # Prevent accidental deletion by advising to use 'rip'.
 alias rip="rip --graveyard ~/.Trash"      # 'rip' moves files to a graveyard directory instead of deleting.
