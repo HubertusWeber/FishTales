@@ -14,6 +14,7 @@ alias gtree="fd | tree --fromfile" # Get a tree view of all files within a git r
 alias rm="echo Use 'rip' instead of rm."  # Prevent accidental deletion by advising to use 'rip'.
 alias rip="rip --graveyard ~/.Trash"      # 'rip' moves files to a graveyard directory instead of deleting.
 alias ripd="sudo rip --graveyard ~/.Trash -d"       # Empty graveyard with sudo priveleges.
+alias repl='clojure -J--enable-native-access=ALL-UNNAMED -Sdeps \'{:deps {com.bhauman/rebel-readline {:mvn/version "0.1.5"}}}\' -M -m rebel-readline.main'
 alias hack="cargo hack clippy --feature-powerset --all-targets -- -W clippy::all -W clippy::pedantic -W clippy::nursery -A clippy::module-name-repetitions -A clippy::suboptimal_flops -A clippy::too_many_arguments -A clippy::cast_precision_loss -A clippy::too_many_lines -A clippy::cast_possible_truncation -A clippy::uninlined-format-args" # Runs full static analysis suite: cargo check & clippy across all feature combinations and targets
 
 # Opens Home.md in Notes directory while preserving current location.
