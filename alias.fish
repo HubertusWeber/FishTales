@@ -8,6 +8,7 @@ alias cdc="cd -"             # Alias to go back to the last working directory.
 alias cp="xcp -r"            # An extended `cp` (recursive by default.)
 alias vim="nvim"             # Use 'nvim' when 'vim' is called; Neovim is an improved version of Vim.
 alias e="nvim"               # Short alias for opening Neovim.
+alias exe="exercism"         # Exercism CLI client
 alias th="thokr -f 3"        # Start a typing practice session with three sentences.
 alias clj="clojure -A:no-history"  # Run Clojure without recording REPL history.
 alias gtree="fd | tree --fromfile" # Get a tree view of all files within a git repo.
