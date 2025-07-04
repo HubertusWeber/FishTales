@@ -24,5 +24,6 @@ set -gx PATH /opt/homebrew/opt/openjdk/bin $PATH     # Java Development Kit bina
 set -gx PATH "$DEV_HOME/elan/bin" $PATH           # Lean language binaries managed by Elan.
 set -gx PATH "$DEV_HOME/go/bin" $PATH             # Go language binaries.
 set -gx PATH "$DEV_HOME/cargo/bin" $PATH          # Rust binaries installed by Cargo.
+set -gx PATH "$HOME/.dotnet/tools" $PATH          # .net Tools.
 set -gx PATH "$HOME/.mint/bin" $PATH
 set -gx PATH "$HOME/.local/bin" $PATH             # User's local binaries.

@@ -141,3 +141,10 @@ set -gx MAVEN_OPTS "-Dmaven.repo.local=$XDG_CACHE_HOME/maven/repository"
 # Set unison directory.
 # Unison is used to sync Obsidian to iCloud
 set -gx UNISON "$DEV_HOME/unison"
+
+## .net
+# Disable .net telemetry
+set -gx DOTNET_CLI_TELEMETRY_OPTOUT true
+
+# Set F# as the preferred language for .net
+set -gx DOTNET_NEW_PREFERRED_LANG F#
