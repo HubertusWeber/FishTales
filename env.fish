@@ -53,15 +53,6 @@ set -gx GIT_CONFIG_GLOBAL "$XDG_CONFIG_HOME/git/gitconfig"
 
 # Programming Languages and Development Tools Configuration
 
-
-
-## ASDF Version Manager
-# Set ASDF startup file to XDG config directory.
-set -gx ASDF_CONFIG_FILE "$XDG_CONFIG_HOME/asdf/asdfrc"
-
-# Change location of asdf directory to our dev home.
-set -gx ASDF_DATA_DIR "$DEV_HOME/asdf"
-
 ## Python
 # Set Python startup file to XDG config directory.
 # This file is executed whenever the interactive Python interpreter is started.
